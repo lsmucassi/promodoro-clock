@@ -1,12 +1,11 @@
 <template>
-    <v-card>
+    <v-card class="mt-6">
         <v-tabs v-model="timerType" >
             <v-tab
-                v-for="tab in tabsTitles"
-                :key="tab"
-                >
+                v-for="tab in tabTitles"
+                :key="tab" >
                 {{ tab }}
-            </tab>
+            </v-tab>
         </v-tabs>
     </v-card>
 </template>
@@ -16,8 +15,14 @@ export default {
     data() {
         return {
             timerType: 0,
-            tabsTitles: ['Promodoro', 'Short Break', 'Long Break']
+            tabTitles: ['Promodoro', 'Short Break', 'Long Break']
         }
     }
 }
 </script>
+
+<style lang="saas" scoped>
+/* .v-card {
+    width: 400px;
+} */
+</style>

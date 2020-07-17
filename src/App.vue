@@ -2,7 +2,13 @@
   <v-app>
    
     <v-content>
-      <Promodoro />
+      <v-container>
+        <v-row>
+          <v-col sm="6" offset-sm="3">
+            <Promodoro />
+          </v-col>
+        </v-row>
+      </v-container>
     </v-content>
   </v-app>
 </template>
